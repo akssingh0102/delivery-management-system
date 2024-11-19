@@ -1,0 +1,95 @@
+# Django specific
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+local_settings.py
+
+# Ignore specific migrations
+backend/services/migrations/0001_initial.py
+backend/services/migrations/0002_alter_component_options_alter_issue_options_and_more.py
+
+# Ignore all migrations but keep __init__.py files
+*/migrations/*
+!*/migrations/__init__.py  # Keep __init__.py files
+
+# Backup files
+*.bak
+
+# Python virtual environment
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Celery beat schedule files
+celerybeat-schedule.*
+
+# React specific
+node_modules/
+build/
+coverage/
+
+# Environment variable files for React
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files (e.g., PyCharm, Visual Studio Code)
+.idea/
+.vscode/
+
+# Miscellaneous files to ignore
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.history
+env/*
